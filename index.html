@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Load the Howler.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"
+        integrity="sha512-dMiBqqEV5i3KqpAdsgQSSZ72DnNib7otY0X+b/Tnn1EmLym1dxuZ19csdZqBnfDniKd9bmNtzStQzuMrIa5Ngw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- Video background -->
+    <!-- <video autoplay muted loop id="myVideo" poster="images/library.jpg">
+        <source src="videos/nature-1.mp4" type="video/mp4">
+    </video> -->
+    <section id="container">
+        <div class="upper-body"></div>
+        <!-- Clock body -->
+        <div class="clock-body">
+            <!-- Dial of clock -->
+            <div class="clock-dial">
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+                <div class="four">4</div>
+                <div class="five">5</div>
+                <div class="six">6</div>
+                <div class="seven">7</div>
+                <div class="eight">8</div>
+                <div class="nine">9</div>
+                <div class="ten">10</div>
+                <div class="eleven">11</div>
+                <div class="twelve">12</div>
+            </div>
+            <!-- Hands of clock -->
+            <div class="clock-hand">
+                <div class="minute"></div>
+                <div class="hour"></div>
+                <div class="second"></div>
+            </div>
+            <!-- Central circle -->
+            <div class="center"></div>
+        </div>
+        <!-- pendulum -->
+        <div class="pendulum-body">
+            <div class="pendulum">
+                <div class="stick-ball"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
