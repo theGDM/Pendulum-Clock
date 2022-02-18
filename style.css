@@ -1,0 +1,262 @@
+/* common styles */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: content-box;
+    outline: none;
+    user-select: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+/* End of common styles */
+
+#myVideo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(rgb(144, 0, 211),rgb(95, 0, 139)) no-repeat; */
+    background: url(images/library.jpg) no-repeat center;
+    background-size: 1538px 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clock-body{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 10rem;
+    box-shadow: 0 0 0 0.4rem #999, 0 0 0 0.5rem #555,
+    0 0 0 0.9rem rgb(250, 192, 0), 0 0 0 1.6rem #000, 1.5rem 1.5rem 1.5rem #222;
+    position: relative;
+    z-index: 10;
+}
+
+.clock-dial{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.clock-dial div{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-dial .one{
+    position: absolute;
+    top: 1.1rem;
+    right: 5.1rem;
+}
+
+.clock-dial .two{
+    position: absolute;
+    top: 4.9rem;
+    right: 1.1rem;
+}
+
+.clock-dial .three{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -0.5rem;
+}
+
+.clock-dial .four{
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+}
+
+.clock-dial .five{
+    position: absolute;
+    bottom: 1.3rem;
+    right: 5.1rem;
+}
+
+.clock-dial .six{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.3rem;
+}
+
+.clock-dial .seven{
+    position: absolute;
+    bottom: 1.3rem;
+    left: 5.1rem;
+}
+
+.clock-dial .eight{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+}
+
+.clock-dial .nine{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -0.5rem;
+}
+
+.clock-dial .ten{
+    position: absolute;
+    top: 4.8rem;
+    left: 1.3rem;
+}
+
+.clock-dial .eleven{
+    position: absolute;
+    top: 1.1rem;
+    left: 5.1rem;
+}
+
+.clock-dial .twelve{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.3rem;
+}
+
+.center{
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 1rem);
+    top: calc(50% - 1rem);
+    box-shadow: 0.1rem 0.1rem 0.3rem #333;
+}
+
+.clock-hand .second{
+    height: 10rem;
+    width: 0.3rem;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - 0.15rem);
+    top: 12.5rem;
+    border-radius: 0 0 100% 100%;
+    transform: rotate(0deg);
+    transform-origin: top center;
+}
+
+.clock-hand .minute{
+    height: 8rem;
+    width: 0.4rem;
+    background-color: #fff;
+    border: 0.1rem solid #000;
+    position: absolute;
+    left: calc(50% - 0.2rem);
+    top: 12.5rem;
+    border-radius: 0 0 100% 100%;
+    transform: rotate(180deg);
+    transform-origin: top center;
+    box-shadow: 0.2rem 0.2rem 0.4rem #000;
+}
+
+.clock-hand .hour{
+    height: 6rem;
+    width: 0.4rem;
+    background-color: #fff;
+    border: 0.1rem solid #000;
+    position: absolute;
+    left: calc(50% - 0.2rem);
+    top: 12.5rem;
+    border-radius: 0 0 100% 100%;
+    transform: rotate(240deg);
+    transform-origin: top center;
+    box-shadow: 0.2rem 0.2rem 0.4rem #000;
+}
+
+/* upper body */
+.upper-body{
+    width: 12rem;
+    height: 7rem;
+    background-color: #222;
+    position: absolute;
+    top: 6rem;
+    left: calc(50% - 6rem);
+    box-shadow:  0 0 0 0.5rem #555,0 0 0 0.9rem rgb(250, 192, 0), 
+    0 0 0 1.6rem #000, 1.5rem 1.5rem 1.5rem #222;
+    border-radius: 40% 40% 0 0;
+}
+
+/* pendulum */
+.pendulum-body{
+    width: 12rem;
+    height: 21rem;
+    background-color: #222;
+    position: absolute;
+    top: 35rem;
+    left: calc(50% - 6rem);
+    box-shadow:  0 0 0 0.5rem #555,0 0 0 0.9rem rgb(250, 192, 0), 
+    0 0 0 1.6rem #000, 1.5rem 1.5rem 1.5rem #222;
+    border-radius: 0 0 100% 100%;
+}
+
+
+.pendulum .stick-ball{
+    width: 0.5rem;
+    height: 16rem;
+    background-color: #ccc;
+    position: absolute;
+    left: calc(50% - 0.25rem);
+    transform-origin: top center;
+    box-shadow: 0.2rem 0.2rem 0.3rem #000;
+    animation: pendulum-stick 1.71s linear infinite;
+}
+
+.pendulum .stick-ball::after{
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-color: #ccc;
+    /* background: radial-gradient(#ccc 40%, rgb(39, 39, 39)); */
+    border-radius: 100%;
+    position: absolute;
+    /* 16 - 1/2*3rem */
+    top: 14.5rem; 
+    left: calc(50% - 1.5rem);
+    z-index: 20;
+    box-shadow: 0.2rem 0.2rem 0.3rem #000;
+}
+
+@keyframes pendulum-stick {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(12deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-12deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+} 
